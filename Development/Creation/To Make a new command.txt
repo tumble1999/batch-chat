@@ -1,0 +1,40 @@
+key @ = inial of command
+    ??? = command name
+    # = no. of your choice
+
+IF %MESSAGE:~1,#%==/ GOTO C@
+
+:C@
+ACTION OF COMMAND HERE
+GOTO CHAT
+
+[FOR HELP ON THE COMMAND}
+IF %MESSAGE:~1,#%==??? ???? GOTO CH????
+:CH????
+ECHO =========[Help on the "/???" command]========
+ECHO /???? - Description
+ECHO /???? (????) Description
+GOTO CHAT
+
+[ADD TO HELP LIST]
+ECHO /????
+
+*please note: only five commands per help page
+
+[TO ADD A HELP PAGE]
+:H#
+ECHO =========[HELP Page (#/#)]=========
+ECHO.
+ECHO type /help [command name] for help on that command
+ECHO type /help [page no.] to go to that help page
+GOTO CHAT
+
+to add a command in a command]=========
+
+:C???
+IF %MESSAGE:~1,8%==??? GOTO C@
+IF %MESSAGE:~1,8%==??? ??? GOTO C@???
+
+:C@????
+ACTION OF COMMAND HERE
+GOTO CHAT

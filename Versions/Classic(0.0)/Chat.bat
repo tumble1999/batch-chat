@@ -1,0 +1,11 @@
+@echo off
+ECHO [SERVER] Type in your message
+:CHAT
+SET /P MESSAGE=:
+IF %MESSAGE%==error GOTO ERROR
+ECHO %MESSAGE%
+GOTO CHAT
+:ERROR
+ECHO [SERVER] ERROR!!"
+GOTO ERROR
+:[SERVER] Player %RANDOM% says:
